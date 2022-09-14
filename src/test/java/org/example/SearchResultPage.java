@@ -36,7 +36,9 @@ public class SearchResultPage {
                 book.price = "0";
             }
             else {
-                book.price = bookPrice.get(0).getText();
+                //String bookPriceForChange;
+                //bookPriceForChange = bookPrice.get(0).getText();
+                book.price = bookPrice.get(0).getText().replace("\n", ".");
             }
 
             if (isBest.size() == 0){
